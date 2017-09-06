@@ -1,5 +1,32 @@
 <!DOCTYPE html>
 <html>
+   <div id="mySidenav" class="sidenav">
+ <ul> 
+   <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+   <li><a href="https://jaketockerman.github.io/">Home Page</a></li>
+   <li><a href="https://github.com/jaketockerman">My Github Page</a></li>
+  <li class = "dropdown">
+    <a href="repositories.html" class="dropbtn">Repositories</a>
+    <div class="dropdown-content">
+      <a href="FTC_Repositories.html">FTC Repositories</a>
+    </div>
+    </ul>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()"><img src="/images/icon-bar.jpg" alt="NavBar" align="middle" style="width:48px;height:48px;" ></span>
+  <head>
+    <script language="javascript">
+      /* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
   <?php include("includes/navbar.php"); ?>
 <h1 style="text-align: center;">This is a website for my repository from the 2016-17 Velocity Vortex FTC season</h1>
 <body>
