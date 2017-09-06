@@ -34,6 +34,7 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.eventloop.opmode.OpModeManager;
 import com.qualcomm.robotcore.eventloop.opmode.OpModeRegistrar;
 
+import org.firstinspires.ftc.teamcode.baseBot.BaseOpMode;
 import org.firstinspires.ftc.teamcode.team5177.Demo5177;
 import org.firstinspires.ftc.teamcode.team5177.Tank5177;
 
@@ -83,8 +84,8 @@ public class OPMODEJESUS
       manager.register("RedAuto", RedAutoMode.class);*/
     //  manager.register("Teleop", TeleopMode.class);
   //  manager.register("Tester", SensorMRColor.class);
-      manager.register("Tank5177",            Tank5177.class);
-      manager.register("Demo5177",            Demo5177.class);
+    //  manager.register("Tank5177",            Tank5177.class);
+      manager.register("BaseOpMode",            BaseOpMode.class);
      // manager.register("DonationBot",            DonationBot.class);
   }
 }

@@ -10,9 +10,10 @@ import com.qualcomm.robotcore.util.ElapsedTime;
  * Created by Code on 3/28/2017.
  */
 
-@TeleOp(name = "Template: Itedemo rative OpMode", group = "Iterative Opmode")
-// @Autonomous(...) is the other common choice
+@TeleOp(name = "BaseOpMode", group = "Iterative Opmode")
 @Disabled
+// @Autonomous(...) is the other common choice
+
 public class BaseOpMode extends OpMode {
     /* Declare OpMode members. */
     private ElapsedTime runtime = new ElapsedTime();
@@ -74,8 +75,8 @@ public class BaseOpMode extends OpMode {
     @Override
     public void loop() {
         telemetry.addData("Status", "Running: " + runtime.toString());
-        rightThrottle = gamepad1.right_stick_y;
-        leftThrottle = gamepad1.left_stick_y;
+        rightThrottle = -gamepad1.right_stick_y;
+        leftThrottle = -gamepad1.left_stick_y;
 
         //makes the throttle less sensitive if right bumper is pressed.
 
@@ -98,12 +99,14 @@ public class BaseOpMode extends OpMode {
             // }
             // if(gamepad2.y){
             //   robot.rack.setPower(1);
-            // }
+             }
 
 
             //    telemetry.addData("Rack Encoder:", robot.rack.getCurrentPosition());
-            telemetry.addData("average encoder", averageEncoders());
-
+         //   telemetry.addData("average encoder", averageEncoders());
+            telemetry.addData("Left", "", leftThrottle);
+            telemetry.addData("Right", "", rightThrottle);
+            telemetry.update();
 
 //elchawpawashere
             //flexonurxbox
@@ -121,7 +124,7 @@ public class BaseOpMode extends OpMode {
         }
 
 
-    }
+
     /*
      * Code to run ONCE after the driver hits STOP
      */

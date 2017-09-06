@@ -1,4 +1,5 @@
 package org.firstinspires.ftc.teamcode.team6173;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
@@ -20,7 +21,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
  */
 
 @TeleOp(name="6173 Walden",group="Pusbot")
-
+@Disabled
 public class Walden6173 extends OpMode{
 
     /* Declare OpMode members. */
