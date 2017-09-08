@@ -81,25 +81,30 @@ public class BaseOpMode extends OpMode {
         //makes the throttle less sensitive if right bumper is pressed.
 
 
-        if (gamepad1.x) {
-            // robot.groundSensor.enableLed(true);
-
+        if (gamepad1.left_trigger == 1) {
+            leftThrottle = -1;
+            rightThrottle = -1;
         }
-        if (gamepad1.y) {
-            // robot.groundSensor.enableLed(false);
+
+        if (gamepad1.right_trigger == 1) {
+            leftThrottle = 1;
+            rightThrottle = 1;
+        }
+
+        if (gamepad1.left_bumper) {
+            leftThrottle = -0.5;
+            rightThrottle = 0.5;
+        }
+
+        if (gamepad1.right_bumper) {
+            leftThrottle = 0.5;
+            rightThrottle = -0.5;
         }
         //telemetry.addData("Color", robot.groundSensor.alpha());
         if (gamepad1.b) {
             resetDriveEncoders();
         }
 
-        if (gamepad2.right_bumper || gamepad1.right_bumper) {
-            // if(Math.abs(robot.rack.getCurrentPosition())<6000){
-
-            // }
-            // if(gamepad2.y){
-            //   robot.rack.setPower(1);
-             }
 
 
             //    telemetry.addData("Rack Encoder:", robot.rack.getCurrentPosition());

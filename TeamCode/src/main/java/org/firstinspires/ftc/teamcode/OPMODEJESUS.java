@@ -67,26 +67,24 @@ public class OPMODEJESUS
 
   @OpModeRegistrar
   public static void registerMyOpModes(OpModeManager manager) {
-    // Un-comment any line to enable that sample.
-    // Or add your own lines to register your Team opmodes.
+      // Un-comment any line to enable that sample.
+      // Or add your own lines to register your Team opmodes.
 
-    /*  manager.register("Hoco",               Hoco2016.class);
-      manager.register("TeleOp",             TeleopMode.class);*/
-
-      /*manager.register("Tank6173",            Tank6173.class);
-    manager.register("Demo6173",            Demo6173.class);
-    manager.register("Walden6173", Walden6173.class);*/
-
+      /* manager.register("Hoco",               Hoco2016.class);
+         manager.register("TeleOp",             TeleopMode.class);*/
+      /* manager.register("Tank6173",            Tank6173.class);
+         manager.register("Demo6173",            Demo6173.class);
+         manager.register("Walden6173", Walden6173.class);*/
       // manager.register("Auto6173",           Auto6173.class);
-   // manager.register("Auto4232",           Auto4232.class);
+      // manager.register("Auto4232",           Auto4232.class);
       //manager.register("Tank4232",           Tank4232.class);
-   /* manager.register("BlueAuto", BlueAutoMode.class);
-      manager.register("RedAuto", RedAutoMode.class);*/
-    //  manager.register("Teleop", TeleopMode.class);
-  //  manager.register("Tester", SensorMRColor.class);
-    //  manager.register("Tank5177",            Tank5177.class);
-      manager.register("BaseOpMode",            BaseOpMode.class);
-     // manager.register("DonationBot",            DonationBot.class);
+      /* manager.register("BlueAuto", BlueAutoMode.class);
+         manager.register("RedAuto", RedAutoMode.class);*/
+      // manager.register("Teleop", TeleopMode.class);
+      // manager.register("Tester", SensorMRColor.class);
+      // manager.register("Tank5177",            Tank5177.class);
+         manager.register("BaseOpMode",            BaseOpMode.class);
+      // manager.register("DonationBot",            DonationBot.class);
   }
 }
  
